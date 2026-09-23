@@ -3460,7 +3460,7 @@ do
       Icon = "rbxassetid://10723346959",
     })
 
-    local shopTab = window:MakeTab({ Title = "Shop", Icon = "rbxassetid://10734952479" })
+    local shoppingTab = window:MakeTab({ Title = "Shopping", Icon = "rbxassetid://10734952479" })
 
     local logicSettingTab = window:MakeTab({
       Title = "Logic Setting",
