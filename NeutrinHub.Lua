@@ -1,4 +1,4 @@
-local players, workspaceService, replicatedStorage, lighting, tweenService, virtualInputManager,
+Slocal players, workspaceService, replicatedStorage, lighting, tweenService, virtualInputManager,
   runService, virtualUser, localizationService, teleportService, httpService, collectionService,
   v1, localPlayer, lighting2, v5, v6, v7, v8
 
@@ -3408,7 +3408,7 @@ do
 
     local autoFarmingTab = window:MakeTab({
       Title = "Auto Farm",
-      Icon = "rbxassetid://13395461439",
+      Icon = "rbxassetid://10709769508",
     })
 
     local questsOtherTab = window:MakeTab({
@@ -13806,4 +13806,4 @@ Price: $]] .. f31(v562),
 
     return
   end
-end
+end          
