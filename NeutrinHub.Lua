@@ -3398,7 +3398,7 @@ do
 
     local informationTab = window:MakeTab({
       Title = "Information",
-      Icon = "info",
+      Icon = "rbxassetid://73132811772878",
     })
 
     local statusServerTab = window:MakeTab({
@@ -3408,7 +3408,7 @@ do
 
     local autoFarmingTab = window:MakeTab({
       Title = "Auto Farm",
-      Icon = "bot",
+      Icon = "rbxassetid://77215218194347",
     })
 
     local questsOtherTab = window:MakeTab({
@@ -3423,24 +3423,24 @@ do
 
     local autoFishingTab = window:MakeTab({
       Title = "Auto Fishing",
-      Icon = "fish",
+      Icon = "rbxassetid://127664059821666",
     })
 
     local seaEventTab = window:MakeTab({ Title = "Sea Event", Icon = "rbxassetid://10747376931" })
 
     local volcanoDojoTab = window:MakeTab({
       Title = "Volcano & Dojo",
-      Icon = "mountain",
+      Icon = "rbxassetid://10734897956",
     })
 
     local mirageRaceTab = window:MakeTab({
       Title = "Mirage & Race",
-      Icon = "map",
+      Icon = "rbxassetid://10734920149",
     })
 
     local fruitsCheckTab = window:MakeTab({
       Title = "Fruits & Check",
-      Icon = "grape",
+      Icon = "rbxassetid://10709790875",
     })
 
     local raidDungoenTab = window:MakeTab({
@@ -3450,14 +3450,14 @@ do
 
     local teleportWorldTab = window:MakeTab({
       Title = "Teleport World",
-      Icon = "locate",
+      Icon = "rbxassetid://10734906975",
     })
 
     local tab = window:MakeTab({ Title = "PvP & Player", Icon = "rbxassetid://10734975692" })
 
     local espStatsTab = window:MakeTab({
       Title = "Esp & Stats",
-      Icon = "eye",
+      Icon = "rbxassetid://10723346959",
     })
 
     local shoppingTab = window:MakeTab({ Title = "Shopping", Icon = "rbxassetid://10734952479" })
@@ -3468,9 +3468,9 @@ do
     })
 
     informationTab:AddSingleDiscordCard({
-      "Turbo Lite Server", "yo omg join server for information update:]",
+      "Neutrin Hub Channel", "Join Channel for information Update",
       "rbxassetid://126649332798893", "rbxassetid://126649332798893", 3667, 31000,
-      "https://turbolite.xyz/dsc",
+      "https://t.me/NeutrinHub",
     })
 
     informationTab:AddParagraph({ "Update Log", "+ Fix Bring Mod Drop FPS lag" })
