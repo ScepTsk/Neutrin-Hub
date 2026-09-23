@@ -3393,7 +3393,7 @@ do
       Title = "Neutrin Hub | Blox Fruits",
       SubTitle = "By ScepTsk",
       SaveFolder = true,
-      Image = "126649332798893",
+      Image = "114073972948075",
     })
 
     local informationTab = window:MakeTab({
@@ -3468,9 +3468,9 @@ do
     })
 
     informationTab:AddSingleDiscordCard({
-      "Turbo Lite Server", "yo omg join server for information update:]",
-      "rbxassetid://126649332798893", "rbxassetid://126649332798893", 3667, 31000,
-      "https://turbolite.xyz/dsc",
+      "Neutrin Hub Channel", "Join this Channel for Update",
+      "rbxassetid://114073972948075", "rbxassetid://137277317246227", 3667, 31000,
+      "https://t.me/NeutrinHub",
     })
 
     informationTab:AddParagraph({ "Update Log", "+ Fix Bring Mod Drop FPS lag" })
