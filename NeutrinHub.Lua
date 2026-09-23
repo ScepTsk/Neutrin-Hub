@@ -3398,7 +3398,7 @@ do
 
     local informationTab = window:MakeTab({
       Title = "Information",
-      Icon = "rbxassetid://73132811772878",
+      Icon = "info",
     })
 
     local statusServerTab = window:MakeTab({
@@ -3407,8 +3407,8 @@ do
     })
 
     local autoFarmingTab = window:MakeTab({
-      Title = "Auto Farming",
-      Icon = "rbxassetid://10709769508",
+      Title = "Auto Farm",
+      Icon = "bot",
     })
 
     local questsOtherTab = window:MakeTab({
@@ -3423,24 +3423,24 @@ do
 
     local autoFishingTab = window:MakeTab({
       Title = "Auto Fishing",
-      Icon = "rbxassetid://127664059821666",
+      Icon = "fish",
     })
 
     local seaEventTab = window:MakeTab({ Title = "Sea Event", Icon = "rbxassetid://10747376931" })
 
     local volcanoDojoTab = window:MakeTab({
       Title = "Volcano & Dojo",
-      Icon = "rbxassetid://10734897956",
+      Icon = "mountain",
     })
 
     local mirageRaceTab = window:MakeTab({
       Title = "Mirage & Race",
-      Icon = "rbxassetid://10734920149",
+      Icon = "map",
     })
 
     local fruitsCheckTab = window:MakeTab({
       Title = "Fruits & Check",
-      Icon = "rbxassetid://10709790875",
+      Icon = "grape",
     })
 
     local raidDungoenTab = window:MakeTab({
@@ -3450,14 +3450,14 @@ do
 
     local teleportWorldTab = window:MakeTab({
       Title = "Teleport World",
-      Icon = "rbxassetid://10734906975",
+      Icon = "locate",
     })
 
     local tab = window:MakeTab({ Title = "PvP & Player", Icon = "rbxassetid://10734975692" })
 
     local espStatsTab = window:MakeTab({
       Title = "Esp & Stats",
-      Icon = "rbxassetid://10723346959",
+      Icon = "eye",
     })
 
     local shoppingTab = window:MakeTab({ Title = "Shopping", Icon = "rbxassetid://10734952479" })
