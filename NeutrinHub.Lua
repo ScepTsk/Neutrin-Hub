@@ -47,16 +47,16 @@ do
     end
 
     return (pcall(function()
-      writefile("meolazy/Settings.json", (httpService2:JSONEncode(_G.SaveData)))
+      writefile("Neutrin/Settings.json", (httpService2:JSONEncode(_G.SaveData)))
     end))
   end
 
   function LoadSettings()
-    if not (isfile and isfile("meolazy/Settings.json")) then
+    if not (isfile and isfile("Neutrin/Settings.json")) then
       return false
     else
       local v2, v3 = pcall(function()
-        return httpService2:JSONDecode((readfile("meolazy/Settings.json")))
+        return httpService2:JSONDecode((readfile("Neutrin/Settings.json")))
       end)
 
       if v2 and v3 then
