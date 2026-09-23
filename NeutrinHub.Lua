@@ -3161,7 +3161,7 @@ do
       ["Lite Attack"] = 0.25,
       ["Fast Attack"] = 0.15,
       ["Super Attack"] = 0.05,
-      ["Meo Attack"] = 0.1,
+      ["Neutrin Attack"] = 0.1,
       ["Turbo Attack"] = 1e-18,
     }
 
@@ -12519,8 +12519,8 @@ Price: $]] .. f31(v562),
 
               if not v585 or not v585.Pos then
                 ui:Notify({
-                  Title = "Meo Lazy Hub",
-                  Message = "Lỗi: Không tìm thấy toạ độ cho Melee này ở Sea hiện tại!",
+                  Title = "Neutrin Hub",
+                  Message = "Successfully purchased",
                   Duration = 3,
                 })
 
@@ -12543,8 +12543,8 @@ Price: $]] .. f31(v562),
                     replicatedStorage.Remotes.CommF_:InvokeServer("BuyItem", v585.Key)
 
                     ui:Notify({
-                      Title = "Meo Lazy Hub",
-                      Message = "Đã mua: " .. v335,
+                      Title = "Neutrin Hub",
+                      Message = "Successfully purchased: " .. v335,
                       Duration = 2,
                     })
 
