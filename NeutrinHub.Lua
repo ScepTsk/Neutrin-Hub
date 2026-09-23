@@ -1,4 +1,4 @@
-Slocal players, workspaceService, replicatedStorage, lighting, tweenService, virtualInputManager,
+local players, workspaceService, replicatedStorage, lighting, tweenService, virtualInputManager,
   runService, virtualUser, localizationService, teleportService, httpService, collectionService,
   v1, localPlayer, lighting2, v5, v6, v7, v8
 
@@ -3407,7 +3407,7 @@ do
     })
 
     local autoFarmingTab = window:MakeTab({
-      Title = "Auto Farm",
+      Title = "Auto Farming",
       Icon = "rbxassetid://10709769508",
     })
 
@@ -3468,9 +3468,9 @@ do
     })
 
     informationTab:AddSingleDiscordCard({
-      "Neutrin Hub Channel", "Join Channel for information Update",
+      "Turbo Lite Server", "yo omg join server for information update:]",
       "rbxassetid://126649332798893", "rbxassetid://126649332798893", 3667, 31000,
-      "https://t.me/NeutrinHub",
+      "https://turbolite.xyz/dsc",
     })
 
     informationTab:AddParagraph({ "Update Log", "+ Fix Bring Mod Drop FPS lag" })
@@ -13806,4 +13806,4 @@ Price: $]] .. f31(v562),
 
     return
   end
-end          
+end
