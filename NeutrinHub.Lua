@@ -3408,7 +3408,7 @@ do
 
     local autoFarmingTab = window:MakeTab({
       Title = "Auto Farm",
-      Icon = "rbxassetid://77215218194347",
+      Icon = "bot",
     })
 
     local questsOtherTab = window:MakeTab({
