@@ -3393,7 +3393,7 @@ do
       Title = "Neutrin Hub | Blox Fruits",
       SubTitle = "By ScepTsk",
       SaveFolder = true,
-      Image = "114073972948075",
+      Image = "72825188101110",
     })
 
     local informationTab = window:MakeTab({
