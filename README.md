@@ -1,2 +1,0 @@
-# Neutrin Hub Гитхаб:
-yo
