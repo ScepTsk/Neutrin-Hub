@@ -34,8 +34,8 @@ do
 
   local httpService2 = v1.HttpService
 
-  if makefolder and not isfolder("meolazy") then
-    makefolder("meolazy")
+  if makefolder and not isfolder("Neutrin Hub") then
+    makefolder("Neutrin Hub")
   end
 
   local g = _G
@@ -3469,11 +3469,11 @@ do
 
     informationTab:AddSingleDiscordCard({
       "Neutrin Hub Channel", "Join this Channel for Update",
-      "rbxassetid://114073972948075", "rbxassetid://137277317246227", 3667, 31000,
+      "rbxassetid://114073972948075", "rbxassetid://137277317246227", 1, 2,
       "https://t.me/NeutrinHub",
     })
 
-    informationTab:AddParagraph({ "Update Log", "+ Fix Bring Mod Drop FPS lag" })
+    informationTab:AddParagraph({ "Update Log:", "+ Fix Bring Mod Drop FPS Lag" })
 
     timeZoneAddParagraph = statusServerTab:AddParagraph({ Title = "Time Zone", Desc = "" })
 
@@ -4022,7 +4022,7 @@ do
 
     autoFarmingTab:AddDropdown({
       Name = "Select Attack Mode",
-      Options = { "Lite Attack", "Fast Attack", "Super Attack", "Meo Attack", "Turbo Attack" },
+      Options = { "Lite Attack", "Fast Attack", "Super Attack", "Neutrin Attack", "Turdo Attack" },
       Default = "Turbo Attack",
       Multi = false,
       Callback = function(value43) StartAttacksWithMode(value43) end,
