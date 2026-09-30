@@ -1,6 +1,6 @@
 --[[
     ═══════════════════════════════════════════════════════════════════════════
-    Yin yang welcome 
+    Yin yang Welcome | Craked By ScepTsk 
     ═══════════════════════════════════════════════════════════════════════════
 ]]
 
@@ -26,131 +26,6 @@ end
 --// ═════════════════════════════════════════════════════════════════════════════
 --// GOOD NICK
 --// ═════════════════════════════════════════════════════════════════════════════
-local KEY_PORTAL_URL = "https://yinyangkeysystemnick.up.railway.app/"
-local KEY_VALIDATE_URL = KEY_PORTAL_URL .. "api/validate?key="
-local KEY_CACHE_FILE = "SAE_EvadeBeta_Key.txt"
-local KeyHttpService = game:GetService("HttpService")
-local KeyTweenService = game:GetService("TweenService")
-
---// Yin Yang.
-local KeyVisualTheme = {
-    Background = Color3.fromRGB(7, 7, 7),
-    Surface = Color3.fromRGB(20, 20, 20),
-    Header = Color3.fromRGB(12, 12, 12),
-    Text = Color3.fromRGB(248, 248, 248),
-    TextDim = Color3.fromRGB(165, 165, 165),
-    Accent = Color3.fromRGB(255, 255, 255),
-    Borders = {Color3.fromRGB(80, 80, 80), Color3.fromRGB(255, 255, 255), Color3.fromRGB(128, 128, 128), Color3.fromRGB(232, 232, 232)},
-}
-
---// KEY LANGUAGE SYSTEM.
-local KeyLanguage = "en"
-local KeyLanguageTranslations = {
-    en = {
-        brand_sub = "EVADE BETA • 24H KEY", title = "KEY SYSTEM", subtitle = "Personal 24-hour access",
-        check = "CHECK KEY", link = "GET LINK", secure = "Secure server verification", checking = "…  CHECKING",
-        revalidating = "REVALIDATING SAVED KEY", contacting = "CONTACTING SERVER", accepted = "KEY ACCEPTED",
-        loading = "LOADING BETA", access_granted = "ACCESS GRANTED", invalid_format = "INVALID FORMAT",
-        server_unavailable = "SERVER UNAVAILABLE", invalid_response = "INVALID RESPONSE", invalid_expired = "INVALID OR EXPIRED KEY",
-        saved_removed = "SAVED KEY REMOVED", link_copied = "LINK COPIED", portal = "PORTAL",
-        no_file_support = "YOUR EXECUTOR HAS NO FILE SUPPORT",
-    },
-    es = {
-        brand_sub = "Nick • CLAVE 24H", title = "SISTEMA DE CLAVE", subtitle = "Acceso personal de 24 horas",
-        check = "VERIFICAR CLAVE", link = "OBTENER ENLACE", secure = "Verificación segura del servidor", checking = "…  VERIFICANDO",
-        revalidating = "REVALIDANDO CLAVE GUARDADA", contacting = "CONTACTANDO AL SERVIDOR", accepted = "CLAVE ACEPTADA",
-        loading = "CARGANDO BETA", access_granted = "ACCESO CONCEDIDO", invalid_format = "FORMATO INVÁLIDO",
-        server_unavailable = "SERVIDOR NO DISPONIBLE", invalid_response = "RESPUESTA INVÁLIDA", invalid_expired = "CLAVE INVÁLIDA O EXPIRADA",
-        saved_removed = "CLAVE GUARDADA ELIMINADA", link_copied = "ENLACE COPIADO", portal = "PORTAL",
-        no_file_support = "TU EXECUTOR NO TIENE SOPORTE DE ARCHIVOS",
-    },
-    pt = {
-        brand_sub = "Yin Yang • CHAVE 24H", title = "SISTEMA DE CHAVE", subtitle = "Acesso pessoal de 24 horas",
-        check = "VERIFICAR CHAVE", link = "OBTER LINK", secure = "Verificação segura do servidor", checking = "…  VERIFICANDO",
-        revalidating = "REVALIDANDO CHAVE SALVA", contacting = "CONTATANDO O SERVIDOR", accepted = "CHAVE ACEITA",
-        loading = "CARREGANDO BETA", access_granted = "ACESSO CONCEDIDO", invalid_format = "FORMATO INVÁLIDO",
-        server_unavailable = "SERVIDOR INDISPONÍVEL", invalid_response = "RESPOSTA INVÁLIDA", invalid_expired = "CHAVE INVÁLIDA OU EXPIRADA",
-        saved_removed = "CHAVE SALVA REMOVIDA", link_copied = "LINK COPIADO", portal = "PORTAL",
-        no_file_support = "SEU EXECUTOR NÃO TEM SUPORTE A ARQUIVOS",
-    },
-    fr = {
-        brand_sub = "Yin Yang • CLÉ 24H", title = "SYSTÈME DE CLÉ", subtitle = "Accès personnel de 24 heures",
-        check = "VÉRIFIER LA CLÉ", link = "OBTENIR LE LIEN", secure = "Vérification sécurisée du serveur", checking = "…  VÉRIFICATION",
-        revalidating = "REVALIDATION DE LA CLÉ ENREGISTRÉE", contacting = "CONTACT DU SERVEUR", accepted = "CLÉ ACCEPTÉE",
-        loading = "CHARGEMENT DE LA BETA", access_granted = "ACCÈS ACCORDÉ", invalid_format = "FORMAT INVALIDE",
-        server_unavailable = "SERVEUR INDISPONIBLE", invalid_response = "RÉPONSE INVALIDE", invalid_expired = "CLÉ INVALIDE OU EXPIRÉE",
-        saved_removed = "CLÉ ENREGISTRÉE SUPPRIMÉE", link_copied = "LIEN COPIÉ", portal = "PORTAIL",
-        no_file_support = "VOTRE EXECUTOR NE PREND PAS EN CHARGE LES FICHIERS",
-    },
-    de = {
-        brand_sub = "Yin Yang • 24H SCHLÜSSEL", title = "SCHLÜSSELSYSTEM", subtitle = "Persönlicher 24-Stunden-Zugang",
-        check = "SCHLÜSSEL PRÜFEN", link = "LINK ERHALTEN", secure = "Sichere Serverüberprüfung", checking = "…  WIRD GEPRÜFT",
-        revalidating = "GESPEICHERTEN SCHLÜSSEL PRÜFEN", contacting = "SERVER WIRD KONTAKTIERT", accepted = "SCHLÜSSEL AKZEPTIERT",
-        loading = "BETA WIRD GELADEN", access_granted = "ZUGRIFF GEWÄHRT", invalid_format = "UNGÜLTIGES FORMAT",
-        server_unavailable = "SERVER NICHT VERFÜGBAR", invalid_response = "UNGÜLTIGE ANTWORT", invalid_expired = "UNGÜLTIGER ODER ABGELAUFENER SCHLÜSSEL",
-        saved_removed = "GESPEICHERTER SCHLÜSSEL ENTFERNT", link_copied = "LINK KOPIERT", portal = "PORTAL",
-        no_file_support = "DEIN EXECUTOR UNTERSTÜTZT KEINE DATEIEN",
-    },
-    it = {
-        brand_sub = "Yin Yang • CHIAVE 24H", title = "SISTEMA CHIAVE", subtitle = "Accesso personale di 24 ore",
-        check = "VERIFICA CHIAVE", link = "OTTIENI LINK", secure = "Verifica sicura del server", checking = "…  VERIFICA",
-        revalidating = "RIVERIFICA CHIAVE SALVATA", contacting = "CONTATTO CON IL SERVER", accepted = "CHIAVE ACCETTATA",
-        loading = "CARICAMENTO BETA", access_granted = "ACCESSO CONSENTITO", invalid_format = "FORMATO NON VALIDO",
-        server_unavailable = "SERVER NON DISPONIBILE", invalid_response = "RISPOSTA NON VALIDA", invalid_expired = "CHIAVE NON VALIDA O SCADUTA",
-        saved_removed = "CHIAVE SALVATA RIMOSSA", link_copied = "LINK COPIATO", portal = "PORTALE",
-        no_file_support = "IL TUO EXECUTOR NON SUPPORTA I FILE",
-    },
-    ru = {
-        brand_sub = "Yin Yang• КЛЮЧ НА 24 Ч", title = "СИСТЕМА КЛЮЧА", subtitle = "Персональный доступ на 24 часа",
-        check = "ПРОВЕРИТЬ КЛЮЧ", link = "ПОЛУЧИТЬ ССЫЛКУ", secure = "Безопасная проверка сервера", checking = "…  ПРОВЕРКА",
-        revalidating = "ПОВТОРНАЯ ПРОВЕРКА СОХРАНЁННОГО КЛЮЧА", contacting = "СВЯЗЬ С СЕРВЕРОМ", accepted = "КЛЮЧ ПРИНЯТ",
-        loading = "ЗАГРУЗКА БЕТА", access_granted = "ДОСТУП РАЗРЕШЁН", invalid_format = "НЕВЕРНЫЙ ФОРМАТ",
-        server_unavailable = "СЕРВЕР НЕДОСТУПЕН", invalid_response = "НЕВЕРНЫЙ ОТВЕТ", invalid_expired = "КЛЮЧ НЕДЕЙСТВИТЕЛЕН ИЛИ ИСТЁК",
-        saved_removed = "СОХРАНЁННЫЙ КЛЮЧ УДАЛЁН", link_copied = "ССЫЛКА СКОПИРОВАНА", portal = "ПОРТАЛ",
-        no_file_support = "ВАШ EXECUTOR НЕ ПОДДЕРЖИВАЕТ ФАЙЛЫ",
-    },
-    ja = {
-        brand_sub = "Yin Yang• 24時間キー", title = "キーシステム", subtitle = "24時間の個人アクセス",
-        check = "キーを確認", link = "リンクを取得", secure = "安全なサーバー検証", checking = "…  確認中",
-        revalidating = "保存されたキーを再確認中", contacting = "サーバーに接続中", accepted = "キーが承認されました",
-        loading = "ベータを読み込み中", access_granted = "アクセスが許可されました", invalid_format = "形式が無効です",
-        server_unavailable = "サーバーを利用できません", invalid_response = "無効な応答です", invalid_expired = "無効または期限切れのキー",
-        saved_removed = "保存されたキーを削除しました", link_copied = "リンクをコピーしました", portal = "ポータル",
-        no_file_support = "お使いのExecutorはファイルに対応していません",
-    },
-    ko = {
-        brand_sub = "Yin Yang • 24시간 키", title = "키 시스템", subtitle = "24시간 개인 액세스",
-        check = "키 확인", link = "링크 받기", secure = "안전한 서버 확인", checking = "…  확인 중",
-        revalidating = "저장된 키 재확인 중", contacting = "서버에 연결 중", accepted = "키 승인됨",
-        loading = "베타 로드 중", access_granted = "접근 허용됨", invalid_format = "잘못된 형식",
-        server_unavailable = "서버를 사용할 수 없음", invalid_response = "잘못된 응답", invalid_expired = "유효하지 않거나 만료된 키",
-        saved_removed = "저장된 키 삭제됨", link_copied = "링크 복사됨", portal = "포털",
-        no_file_support = "사용 중인 Executor는 파일을 지원하지 않습니다",
-    },
-    zh = {
-        brand_sub = "Yin Yang • 24小时密钥", title = "密钥系统", subtitle = "24小时个人访问",
-        check = "验证密钥", link = "获取链接", secure = "安全服务器验证", checking = "…  验证中",
-        revalidating = "重新验证已保存的密钥", contacting = "正在连接服务器", accepted = "密钥已通过",
-        loading = "正在加载测试版", access_granted = "已获得访问权限", invalid_format = "格式无效",
-        server_unavailable = "服务器不可用", invalid_response = "响应无效", invalid_expired = "密钥无效或已过期",
-        saved_removed = "已删除保存的密钥", link_copied = "链接已复制", portal = "门户",
-        no_file_support = "你的Executor不支持文件",
-    },
-}
-
-local function getKeyLanguage(localeId)
-    local language = string.lower(tostring(localeId or "en")):match("^(%a+)") or "en"
-    return KeyLanguageTranslations[language] and language or "en"
-end
-
-local function keyText(key)
-    local languageTable = KeyLanguageTranslations[KeyLanguage] or KeyLanguageTranslations.en
-    return languageTable[key] or KeyLanguageTranslations.en[key] or key
-end
-
-function getKeyVisualTheme()
-    return KeyVisualTheme
-end
 
 function addYinSweep(strokeObject, borderColors, duration)
     local gradient = Instance.new("UIGradient")
@@ -809,7 +684,7 @@ end
 
 --// KEY SYSTEM: interfaz desactivada (no eliminada). Para reactivar el popup
 --// de clave, poner esta bandera en true.
-local ENABLE_KEY_SYSTEM_UI = true
+local ENABLE_KEY_SYSTEM_UI = false
 
 if ENABLE_KEY_SYSTEM_UI and not createKeySystemUI() then
     warn("YIN YANG KEY: closed without a valid key")
